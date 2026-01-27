@@ -1,0 +1,13 @@
+# Secrets / auth
+auth.json
+
+# Local runtime state
+sessions/
+tmp/
+models_cache.json
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+

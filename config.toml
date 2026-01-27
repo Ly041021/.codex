@@ -1,0 +1,11 @@
+model = "gpt-5.2"
+model_reasoning_effort = "high"
+
+[features]
+web_search_request = true
+
+[mcp_servers.context7]
+url = "https://mcp.context7.com/mcp"
+
+[mcp_servers.grep]
+url = "https://mcp.grep.app"
