@@ -1,13 +1,33 @@
-# Secrets / auth
+# Secrets / auth / machine-local provider config
 auth.json
+config_api.toml
+installation_id
 
 # Local runtime state
 sessions/
 tmp/
+.tmp/
+log/
+cache/
+memories/
+shell_snapshots/
 models_cache.json
+.personality_migration
+version.json
+
+# Local databases and event logs
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+*.db-shm
+*.db-wal
+history.jsonl
+session_index.jsonl
 
 # OS / editor noise
+__pycache__/
+*.py[cod]
 .DS_Store
 Thumbs.db
 .vscode/
-

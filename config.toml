@@ -2,6 +2,7 @@ model = "gpt-5.5"
 model_reasoning_effort = "medium"
 personality = "pragmatic"
 web_search = "live"
+approvals_reviewer = "user"
 
 # Disabled: remote startup currently fails with an HTTP transport error.
 # Re-enable when network access to https://mcp.context7.com/mcp is stable.
@@ -35,4 +36,4 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [tui.model_availability_nux]
-"gpt-5.5" = 3
+"gpt-5.5" = 4
