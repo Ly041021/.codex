@@ -1,11 +1,38 @@
-model = "gpt-5.2"
-model_reasoning_effort = "high"
+model = "gpt-5.5"
+model_reasoning_effort = "medium"
+personality = "pragmatic"
+web_search = "live"
 
-[features]
-web_search_request = true
-
-[mcp_servers.context7]
-url = "https://mcp.context7.com/mcp"
+# Disabled: remote startup currently fails with an HTTP transport error.
+# Re-enable when network access to https://mcp.context7.com/mcp is stable.
+# [mcp_servers.context7]
+# url = "https://mcp.context7.com/mcp"
 
 [mcp_servers.grep]
 url = "https://mcp.grep.app"
+
+# Disabled: requires an interactive login first:
+#   codex mcp login linear
+# [mcp_servers.linear]
+# url = "https://mcp.linear.app/mcp"
+
+[projects."/home/ly/TIO_Former"]
+trust_level = "trusted"
+
+[projects."/home/ly/YOPO-C5-upload-to-c5"]
+trust_level = "trusted"
+
+[projects."/home/ly/imu_tof_collector"]
+trust_level = "trusted"
+
+[projects."/home/ly/TIO_data_process"]
+trust_level = "trusted"
+
+[projects."/home/ly/odom_dataset"]
+trust_level = "trusted"
+
+[projects."/home/liuyang"]
+trust_level = "trusted"
+
+[tui.model_availability_nux]
+"gpt-5.5" = 3
